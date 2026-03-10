@@ -5,7 +5,7 @@ btn.addEventListener("click",job);
  async function job(){
     try{
     let country=txt.value;
-    let w=await axios.get("https://api.weatherapi.com/v1/current.json?key=277178c35b7f4680adf213524262402&q="+country+"&aqi=yesResponse Code");
+    let w=await axios.get("https://api.weatherapi.com/v1/current.json?key=277178c35b7f4680adf213524262402&q="+country+"&aqi=yes");
     let Capital=document.querySelector("#Capital");
     let Time=document.querySelector("#Time");
     let temp=document.querySelector("#temp");
